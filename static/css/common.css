@@ -1,0 +1,378 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  font-weight: normal;
+  vertical-align: baseline;
+}
+*{
+  margin: 0;
+  padding: 0;
+
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* custom */
+a {
+  color:#1890ff;
+  text-decoration: none;
+  -webkit-backface-visibility: hidden;
+}
+a:hover{
+  color:#46a6ff;
+}
+li {
+  list-style: none;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: #e4e7ed;
+  -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:vertical {
+  height: 5px;
+  background-color: #c8cbd3;
+  -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:horizontal {
+  width: 5px;
+  background-color: #c8cbd3;
+  -webkit-border-radius: 6px;
+}
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  /*background-color: #ffffff;*/
+  background-color: #fff;
+  box-sizing: border-box;
+  font-family:"Helvetica Neue","Helvetica","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Arial,sans-serif";
+}
+body {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.el-table th{
+  background: #f1f3f7!important;
+}
+
+
+/*tab切换的线条大小*/
+.el-tabs__nav-wrap::after{
+  height:0px!important;
+}
+/*搜索的删除按钮*/
+.el-input .el-input__clear:hover {
+    color: #f25058!important;
+}
+
+
+.table-list-null{
+  text-align: center;
+  /*min-height:200px;*/
+  margin:70px 0;
+}
+.table-list-null i{
+  color:#a3adb6;
+  font-size:30px;
+}
+.table-list-null  p{
+  font-size: 14px;
+  color: #a3adb6;
+  margin:14px 0;
+}
+ .pagination-conteiner{
+    height:32px;
+    /* width:100%; */
+    padding:30px 0 10px 0;
+  }
+  .pagination{
+    width:100%;
+    text-align: right;
+    display:inline-block;
+  }
+  .w-260{
+      width:260px;
+  }
+   .user-header-pop {
+    min-width: 95px;
+  }
+  .el-popover.user-header-pop {
+    min-width: 95px;
+  }
+   /*页面头部*/
+  .mall-section-container{
+    flex:1;
+    /*margin-bottom:40px;*/
+
+  }
+  .mall-content-section{
+      height:100%;
+  }
+  .mall-content-title{
+    height:85px;
+    background:#fff;
+    border-bottom:1px solid #e4e7ed;
+    padding:15px 0 0 25px;
+  }
+  .mall-content-title h3{
+      color:#303133;
+      font-size:20px;
+      padding:24px 0;
+      font-weight:500;
+  }
+  .mall-content-title h3 span{
+      color:#303133;
+      font-size:20px;
+      font-weight:500;
+  }
+  .mall-content-title h3 i{
+    font-size:20px;
+    color:#c0c4ce;
+    cursor: pointer;
+  }
+  .mall-content-title h3 i:hover{
+    color:#909399;
+  }
+
+/*编辑按钮*/
+.el-icon-edit{
+  color:#808995!important;
+}
+.el-icon-edit:hover{
+  color:#1890ff!important;
+}
+/*tab选项卡*/
+.el-tabs__header{
+  margin:0px!important;
+}
+.bread-content .el-tabs__nav-wrap{
+  padding-left: 25px!important;
+  background: #fff;
+}
+.el-tabs__nav-scroll{
+  box-shadow: 5px -1px 10px #ddd;
+}
+.el-tabs__nav{
+  z-index:1!important;
+}
+.gray-color{
+  color:#828282;
+}
+/*左侧菜单*/
+.left-aside-contain .el-submenu__title:hover{
+    background-color: #020b21;
+  }
+/*使用页如果有加 scoped ,需要到公共样式中添加*/
+.el-menu.el-menu--popup {
+    background: #020b21;
+    border-radius: 4px;
+}
+/*头部菜单*/
+.user-header-pop {
+  min-width: 95px;
+}
+.el-popover.user-header-pop {
+  min-width: 95px;
+}
+/*表格暂无数据*/
+.el-table::before{
+  height:0px;
+}
+.no-data-wrap{
+  margin:70px 0;
+}
+.no-data-icon{
+  margin-bottom:20px;
+}
+/* 列表搜索条件 */
+.operate-top{
+  height:32px;
+  margin-bottom:22px;
+}
+.operate-top .fl{
+  font-size:0;
+}
+.operate-top .fr{
+  font-size:0;
+}
+.search-item{
+  display:inline-block;
+  margin-right:8px;
+  vertical-align: top;
+}
+/*去掉暂无数据的线条*/
+.el-table:before{
+  height:0px!important;
+}
+/*解决firefox下的兼容问题*/
+.leftBar-wrap .el-menu{
+  background-color: #020b21;
+}
+/*去掉input数字框默认的上下三角*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* .el-input__inner{
+  line-height:0px!important;
+}
+.el-input__inner::-webkit-input-placeholder {
+  line-height:normal!important;
+}
+
+::-moz-placeholder {
+  line-height:normal!important;
+
+}
+
+:-ms-input-placeholder {
+  line-height:normal!important;
+} */
+.icon-xinxixianshi{
+  color: #909399;
+  font-size: 14px;
+  cursor: pointer;
+}
+/* 彩色图标 */
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
