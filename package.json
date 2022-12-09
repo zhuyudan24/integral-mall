@@ -20,7 +20,7 @@
     "es6-promise": "^4.2.6",
     "less": "^3.0.4",
     "less-loader": "^4.1.0",
-    "tinymce": "^4.8.2",
+    "tinymce": "^5.10.7",
     "vue": "^2.5.2",
     "vue-axios": "^2.1.1",
     "vue-clipboard2": "^0.2.1",
